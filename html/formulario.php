@@ -156,7 +156,7 @@ if (isset($_GET)) {
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="pagina.php">Elementos culturales</a></li>
-                <li><a href="formulario.php">Formulario</a></li>
+                <li><a href="formulario.php">Registrate aquí</a></li>
             </ul>
         </nav>
     </header>

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginastyle.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
     <title>Pagina principal</title>
 </head>
 
@@ -21,7 +23,7 @@
             <ul>
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="pagina.php">Elementos culturales</a></li>
-                <li><a href="formulario.php">Formulario</a></li>
+                <li><a href="formulario.php">Registrate aquí</a></li>
             </ul>
         </nav>
     </header>
