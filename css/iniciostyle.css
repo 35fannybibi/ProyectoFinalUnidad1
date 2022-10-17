@@ -12,7 +12,7 @@ body{
 section{
     background-image: url(../imagenes/fondo.jpg);
     display: grid;
-    grid-template-columns: 1f 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .c1{

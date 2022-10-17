@@ -116,10 +116,9 @@ if (isset($_GET)) {
             $acudienteOne = $dataOne->acudiente;
             $id_estudianteOne = $dataOne->id_estudiante;
         }
-
     } else if (isset($_GET["id_estudiante_eliminar"])) {
 
-        $deleteOne = $e->delete($_GET["id_estudiante_eliminar"]);       
+        $deleteOne = $e->delete($_GET["id_estudiante_eliminar"]);
     }
 
     $data = $e->getAll();
@@ -142,21 +141,89 @@ if (isset($_GET)) {
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/bootstrap.min.js"></script>
     <title>Pagina principal</title>
+    <style>
+        @media (max-width: 1260px) {
+
+            .contenedor {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+            }
+
+            .registro {
+                grid-row: 1;
+                grid-column: 1;
+            }
+
+
+            .consulta {
+                grid-row: 2;
+                grid-column: 1;
+            }
+
+            .actualizacion {
+                grid-row: 3;
+                grid-column: 1;
+            }
+
+            .eliminacion {
+                grid-row: 4;
+                grid-column: 1;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div class="header_imagen">
-            <img src="../imagenes/header.jpg" alt="imagen de inicio">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img style="width: 100%;height: 300px;" src="../imagenes/header.jpg" class="d-block w-100 header_imagen" alt="...">
+
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black; font-weight: bold;">Pacífico y sus generaciones</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="width: 100%;height: 300px;" src="../imagenes/header1.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: white; font-weight: bold;">Diversidad cultural</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img style="width: 100%;height: 300px;" src="../imagenes/header3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: black; font-weight: bold;">Gastronomía única</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
         <div class="header_titulo">
             <h1>pacifico escuela web</h1>
         </div>
+
         <nav>
-            <ul>
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="pagina.php">Elementos culturales</a></li>
-                <li><a href="formulario.php">Registrate aquí</a></li>
+
+            <ul class="nav justify-content-end">
+
+                <li class="nav-item"><a style="color: black;" class="nav-link" href="index.php">Inicio</a></li>
+                <li class="nav-item"><a style="color: black;" class="nav-link" href="pagina.php">Elementos culturales</a></li>
+                <li class="nav-item"><a style="color: black;" class="nav-link" href="formulario.php">Registrate aquí</a></li>
             </ul>
         </nav>
     </header>

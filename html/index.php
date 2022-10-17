@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/bootstrap.min.js"></script>
     <title>Pagina principal</title>
+    <style>
+        @media (max-width: 750px) {
+
+            section {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+
+            .c1 {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .c2 {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -87,7 +108,7 @@
                 <div class="card-body">
                     <h1 style="font-size: 14px; text-align: center;">GIMNASIO COOPERATIVO DEL PACIFICO</h1>
                     <p style="text-align: justify;" class="card-text">
-                    Llevar a los educando y padres de familia a conocer afondo su entorno cultural, mostrando desde
+                        Llevar a los educando y padres de familia a conocer afondo su entorno cultural, mostrando desde
                         los espacios virtuales elementos como: bailes típicos, trajes, instrumentos musicales, comidas
                         típicas, bebidas, lugares históricos y turísticos, productos y dulces etc.
                     </p>
